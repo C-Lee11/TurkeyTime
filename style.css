@@ -43,6 +43,8 @@ html, body {
     width: 20%;
     border-radius: 100% 0% 100% 5%;
     transform-origin: top right;
+    top: 41%;
+    left: 23%;
     transform: rotate(-10deg);
 }
 
@@ -50,4 +52,40 @@ html, body {
     left: auto;
     right: 43%;
     transform: scaleX(-1) rotate(-10deg);
+}
+
+.head {
+    height: 19%;
+    width: 19%;
+    top: 15%;
+    left: 50%;
+    border-radius: 50%;
+    background: var(--brown2);
+    transform: translate(-50%, 0);
+    clip-path: polygon(0% 20%, 100% 20%, 100% 500%, 0% 500%);
+}
+
+.head::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: var(--brown2);
+    height: 120%;
+    width: 40%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 0 0 100% 100% / 30%;
+}
+
+.eye {
+    width: 10%;
+    height: 10%;
+    background: black;
+    border-radius: 50%;
+    top: 40%;
+    left: 50%;
+    box-shadow: 5vmin 0;
+    transform: translate(-50%, 0) translate(-2.5vmin, 0);
+
 }
